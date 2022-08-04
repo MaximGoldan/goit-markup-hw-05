@@ -235,7 +235,6 @@ address {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  margin-right: 30px;
   border-radius: 4px;
   align-items: center;
   justify-content: center;
@@ -246,10 +245,6 @@ address {
 }
 
 .benefits-item:last-child {
-  margin-right: 0px;
-}
-
-.benefits-icon:last-child {
   margin-right: 0px;
 }
 
@@ -499,7 +494,6 @@ address {
 .join-soc-link:hover,
 .join-soc-link:focus {
   background-color: #2196f3;
-  fill: #ffffff;
 }
 
 /* портфолио */
@@ -555,7 +549,6 @@ address {
 .portfolio-item {
   width: 370px;
   margin: 15px;
-  border: 1px solid #eeeeee;
 }
 
 .portfolio-link:hover {
