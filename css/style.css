@@ -130,12 +130,11 @@ address {
 }
 
 .header-tel-icon {
-  /* display: block; */
   margin-right: 10px;
   fill: #757575;
   height: 16px;
   width: 20px;
-  stroke: currentColor;
+  fill: currentColor;
 }
 
 .header-mail {
@@ -165,13 +164,7 @@ address {
 .header-mail:hover,
 .header-tel-icon:hover,
 .header-tel-icon:focus {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: #2196f3;
-  fill: #2196f3;
-  fill: currentColor;
 }
 
 /* Герой */
@@ -351,16 +344,14 @@ address {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
-  /* padding-bottom: 30px; */
-  /* margin-bottom: 30px; */
+  fill: currentColor;
+  margin-bottom: 16px;
 }
 .team-soc {
   display: flex;
   justify-content: center;
   gap: 10px;
-  padding-top: 16px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .item-soc-link {
@@ -399,13 +390,7 @@ address {
   gap: 30px;
   justify-content: center;
 }
-.clients-item {
-  /* display: flex;
-  justify-content: center; */
 
-  /* border: 1px solid #afb1b8;
-  border-radius: 4px; */
-}
 .clients-link {
   display: flex;
   width: 170px;
@@ -422,8 +407,8 @@ address {
 }
 .clients-link:hover,
 .clients-link:focus {
-  border: 1px solid #2196f3;
-  fill: #2196f3;
+  border-color: #2196f3;
+  color: #2196f3;
 }
 
 /* Подвал */
@@ -489,16 +474,16 @@ address {
 .join-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 0, 87;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 .join-list {
   display: flex;
   justify-content: center;
   gap: 10px;
-  padding-top: 20px;
 }
 .join-soc-link {
   display: flex;
@@ -508,7 +493,7 @@ address {
   justify-content: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  fill: #afb1b8;
+  fill: #ffffff;
 }
 
 .join-soc-link:hover,
@@ -572,7 +557,9 @@ address {
   margin: 15px;
   border: 1px solid #eeeeee;
 }
-.portfolio-item:hover {
+
+.portfolio-link:hover {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
