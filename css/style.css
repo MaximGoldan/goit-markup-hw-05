@@ -129,6 +129,7 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
   cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* подчеркивание   */
 .active::after {
@@ -173,13 +174,7 @@ address {
 
 .header-link:hover,
 .header-link:focus {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: #2196f3;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-mail:hover,
@@ -206,6 +201,12 @@ address {
   margin-bottom: 30px;
 }
 .hero {
+  margin-right: auto;
+  margin-left: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
   padding: 200px 0;
   background-color: #2f303a;
   background-image: linear-gradient(
@@ -215,11 +216,6 @@ address {
     ),
     url(../imag/Img-hero.jpg);
   /* background-image: url(../imag/Img-Overlay.png), url(../imag/Img-hero.jpg); */
-  background-repeat: no-repeat;
-  background-position: center;
-  /* background-size: cover; */
-  /* min-width: 1600px; */
-  background-size: 1600px 600px;
 }
 
 .hero-but {
@@ -322,22 +318,22 @@ address {
 }
 
 .work-text {
+  display: flex;
   position: absolute;
   bottom: 0px;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  align-items: center;
+  justify-content: center;
+
   width: 100%;
+  height: 70px;
+
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
 }
-/* .work-list .work-item:not(:last-child) {
-  margin-right: 30px; 
-} */
 
 /* Наша команда */
 .team {
@@ -405,13 +401,13 @@ address {
   justify-content: center;
 
   fill: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item-soc-link:hover,
 .item-soc-link:focus {
   background-color: #2196f3;
   fill: #ffffff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* <!-- постоянные клиенты --> */
 .clients {
@@ -444,6 +440,7 @@ address {
   border-radius: 4px;
   /* background-color: #ffffff; */
   color: #afb1b8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link {
   fill: currentColor;
@@ -479,6 +476,7 @@ address {
 
 .footer-item {
   margin-bottom: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-item:last-child {
   margin-bottom: 0px;
@@ -507,8 +505,6 @@ address {
 .adres-gps:focus,
 .adres-text:focus {
   color: #2196f3;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* присоиденяйтесь */
@@ -541,12 +537,12 @@ address {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-soc-link:hover,
 .join-soc-link:focus {
   background-color: #2196f3;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* портфолио */
@@ -577,6 +573,9 @@ address {
   cursor: pointer;
   border-radius: 4px;
   padding: 6px 22px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-nav .list-nav__item:not(:last-child) {
@@ -589,8 +588,6 @@ address {
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list {
@@ -622,17 +619,17 @@ address {
   letter-spacing: 0.03em;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
-
+  opacity: 1;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
 }
 
 .portfolio-item:hover .portfolio-text-action {
   transform: translateY(0);
-
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
 }
 /* ne rabotaet focus */
-.portfolio-item:focus .portfolio-text-action {
+.portfolio-link:focus .portfolio-text-action {
   transform: translateY(0);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -668,7 +665,7 @@ address {
   letter-spacing: 0.03em;
   color: #757575;
 }
-
+/* backdrop */
 .backdrop {
   position: fixed;
   top: 0;
@@ -676,25 +673,32 @@ address {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  opacity: 1;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   width: 530px;
   height: 580px;
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
 }
 .modal-icon {
   position: absolute;
@@ -702,5 +706,9 @@ address {
   height: 30px;
   top: 10px;
   right: 10px;
-  /* border-color: currentColor; */
+  cursor: pointer;
+  border-radius: 4px;
+}
+.modal-icon:hover {
+  background-color: #f10909;
 }
