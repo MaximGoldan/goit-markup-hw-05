@@ -1,21 +1,5 @@
 # HM-1-desktop
 
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-/_ .portfolio-tumb::before {
-display: inline-block;
-position: absolute;
-content: '';
-width: 100%;
-height: 100%;
-background-color: rgba(33, 150, 243, 0.9);
-transform: translateY(100%);
-opacity: 0;
-} _/
-
 /_ селекторы _
 /_ универсальный _
 тега - p
