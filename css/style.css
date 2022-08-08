@@ -14,6 +14,7 @@ body {
   font-family: 'Raleway', sans-serif;
 
   font-family: 'Roboto', sans-serif;
+
   background: #ffffff;
 }
 h1,
@@ -139,6 +140,8 @@ address {
   bottom: -1px;
   right: 0;
   width: 100%;
+  /* background: currentColor; */
+  /* color: currentColor; */
   background-color: #2196f3;
   height: 4px;
   border-radius: 2px;
@@ -440,7 +443,8 @@ address {
   border-radius: 4px;
   /* background-color: #ffffff; */
   color: #afb1b8;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link {
   fill: currentColor;
@@ -629,10 +633,13 @@ address {
   transform: translateY(0);
   opacity: 1;
 }
+.portfolio-link {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* ne rabotaet focus */
 .portfolio-link:focus .portfolio-text-action {
   transform: translateY(0);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
@@ -640,7 +647,6 @@ address {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-naim {
