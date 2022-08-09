@@ -703,7 +703,7 @@ address {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 530px;
-  height: 580px;
+  min-height: 580px;
   border-radius: 4px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
